@@ -6,7 +6,7 @@ urlpatterns = [
     url(r'^$', main),
     url(r'^login/$', mylogin),
     url(r'^signup/$', singup),
-    url(r'^question/(?P<id>[^/]+)/$', question, name='question'),
+    url(r'^question/(?P<id>[0-9]+)/$', question, name='question'),
     url(r'^ask/$', ask),
     url(r'^answer/$', answer),
     url(r'^popular/$', popular),
